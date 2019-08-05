@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -O -Wall -g
+CFLAGS = -Wall -g
 
 distdtwrec: distdtwrec.c
 	$(CC) -o distdtwrec distdtwrec.c $(CFLAGS)
