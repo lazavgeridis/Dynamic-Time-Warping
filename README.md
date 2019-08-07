@@ -20,3 +20,21 @@ Assume we have 2 time-series *A* and *B*. *A* has *ai* elements (1 <= i <= n) an
 
 ## Execution
 
+```
+$ make dtwdp
+```
+
+The dtwdp is the recommended executable. Some sample executions are presented above.
+
+```
+$ cat train_FaceFour.txt test_FaceFour.txt | ./dtwdp
+```
+```
+cat train_FaceFour.txt test_FaceFour.txt | ./dtwdp 0
+```
+```
+cat train_FaceFour.txt test_FaceFour.txt | ./dtwdp 0
+```
+
+
+
