@@ -24,7 +24,7 @@ Assume we have 2 time-series *A* and *B*. *A* has *ai* elements (1 <= i <= n) an
 $ make dtwdp
 ```
 
-The dtwdp is the recommended executable. Some sample executions are presented above.
+The dtwdp is the recommended executable to be generated. Some sample executions are presented above.
 
 ```
 $ cat train_FaceFour.txt test_FaceFour.txt | ./dtwdp
@@ -33,8 +33,20 @@ $ cat train_FaceFour.txt test_FaceFour.txt | ./dtwdp
 cat train_FaceFour.txt test_FaceFour.txt | ./dtwdp 0
 ```
 ```
-cat train_FaceFour.txt test_FaceFour.txt | ./dtwdp 0
+cat train_FaceFour.txt test_FaceFour.txt | ./dtwdp 7
 ```
 
+![Screenshot](execution1.png)
+![Screenshot](execution2.png)
+Notice how much the cpu time drops when a small *constraint* argument is given. Some more examples:
 
-
+```
+cat train_ECG5000.txt test_ECG5000.txt | ./dtwdp > /dev/null
+```
+```
+cat train_ECG5000.txt test_ECG5000.txt | ./dtwdp 0 > /dev/null
+```
+```
+cat train_ECG5000.txt test_ECG5000.txt | ./dtwdp 45 > /dev/null
+```
+![Screenshot](execution3.png)
