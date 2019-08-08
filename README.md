@@ -24,7 +24,7 @@ Assuming that *d(ai,bj)* = *(ai-bj)^2* and that *min{x,y,z}* is the minimum of *
 $ make dtwdp
 ```
 
-The dtwdp is the recommended executable to be generated. Some sample executions are presented above.
+The dtwdp is the recommended executable to be generated. Some sample executions are presented below.
 
 ```
 $ cat train_FaceFour.txt test_FaceFour.txt | ./dtwdp
